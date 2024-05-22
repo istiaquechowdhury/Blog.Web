@@ -1,0 +1,4 @@
+2024-05-20 22:46:36.822 +06:00 [INF] Application is Starting
+2024-05-20 22:46:38.667 +06:00 [INF] Server=(localdb)\mssqllocaldb;Database=aspnet-Blog.Web-e4c92e99-897b-487b-9db7-48f2fa42c0ce;Trusted_Connection=True;MultipleActiveResultSets=true
+2024-05-20 22:46:43.706 +06:00 [INF] index
+2024-05-20 22:47:41.963 +06:00 [INF] index

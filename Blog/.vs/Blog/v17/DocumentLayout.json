@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DCL\\source\\Blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|c:\\users\\dcl\\source\\blog\\blog.web\\blog.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\blog.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|c:\\users\\dcl\\source\\blog\\blog.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|c:\\users\\dcl\\source\\blog\\blog.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Blog.Web.csproj",
+              "DocumentMoniker": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Blog.Web.csproj",
+              "RelativeDocumentMoniker": "Blog.Web\\Blog.Web.csproj",
+              "ToolTip": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Blog.Web.csproj",
+              "RelativeToolTip": "Blog.Web\\Blog.Web.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-22T04:50:13.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Blog.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\appsettings.json",
+              "RelativeToolTip": "Blog.Web\\appsettings.json",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAACEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T04:47:08.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Program.cs",
+              "RelativeToolTip": "Blog.Web\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAowIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T04:44:14.342Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

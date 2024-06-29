@@ -1,0 +1,60 @@
+﻿@using Blog.Web.Areas.Admin.Models
+
+@model BlogPostCreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+   <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-sm-12">
+              
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Create a Post</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form asp-area="Admin" asp-controller="BlogPost" asp-action="Create" asp-antiforgery="true"> 
+                <div class="card-body">
+                  <div class="form-group">
+                    <label asp-for="Title"></label>
+                    <input type="text" asp-for="Title" class="form-control">
+                  </div>
+                  
+                  
+                  
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+
+            <!-- general form elements -->
+           
+            <!-- /.card -->
+
+            <!-- Input addon -->
+           
+            <!-- /.card -->
+            <!-- Horizontal Form -->
+           
+            <!-- /.card -->
+
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+   </section>

@@ -1,0 +1,12 @@
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\bin\Debug\net8.0\Blog.Application.deps.json
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\bin\Debug\net8.0\Blog.Application.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\bin\Debug\net8.0\Blog.Application.pdb
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.AssemblyInfoInputs.cache
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.AssemblyInfo.cs
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.csproj.CoreCompileInputs.cache
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.sourcelink.json
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\refint\Blog.Application.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\Blog.Application.pdb
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\obj\Debug\net8.0\ref\Blog.Application.dll

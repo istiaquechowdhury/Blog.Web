@@ -3238,6 +3238,29 @@
             "rid": "win"
           }
         }
+      },
+      "Blog.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Blog.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Blog.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Application.dll": {}
+        }
+      },
+      "Blog.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Blog.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blog.Domain.dll": {}
+        }
       }
     }
   },
@@ -9052,11 +9075,22 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Blog.Application/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Application/Blog.Application.csproj",
+      "msbuildProject": "../Blog.Application/Blog.Application.csproj"
+    },
+    "Blog.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Blog.Domain/Blog.Domain.csproj",
+      "msbuildProject": "../Blog.Domain/Blog.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Autofac.Extensions.DependencyInjection >= 9.0.0",
+      "Blog.Application >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.4",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.4",
@@ -9070,19 +9104,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DCL\\.nuget\\packages\\": {}
+    "C:\\Users\\istia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Blog.Web.csproj",
+      "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
       "projectName": "Blog.Web",
-      "projectPath": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\Blog.Web.csproj",
-      "packagesPath": "C:\\Users\\DCL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DCL\\source\\Blog\\Blog.Web\\obj\\",
+      "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
+      "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
+      "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DCL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9090,12 +9124,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+              "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -9177,7 +9216,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

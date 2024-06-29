@@ -9,6 +9,7 @@
       "Blog.Web/1.0.0": {
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "9.0.0",
+          "Blog.Application": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.UI": "8.0.4",
@@ -2167,6 +2168,11 @@
             "fileVersion": "7.0.22.51805"
           }
         }
+      },
+      "Blog.Application/1.0.0": {
+        "runtime": {
+          "Blog.Application.dll": {}
+        }
       }
     }
   },
@@ -3477,6 +3483,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "Blog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -7,6 +7,8 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.MSSqlServer;
 using Blog.Web;
+using System.Reflection;
+using Blog.Infrastructure;
 
 
 
@@ -28,6 +30,8 @@ try
     #region file logger and Mssql logger
     Log.Information("application is starting");
     var builder = WebApplication.CreateBuilder(args);
+    var connectionstring = builder.Configuration.GetConnectionString("DefaultConnection");
+    var migrationAssembly = Assembly.GetExecutingAssembly().FullName;
     var logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
@@ -57,7 +61,7 @@ try
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
     builder.Host.ConfigureContainer<ContainerBuilder>(ContainerBuilder =>
     {
-        ContainerBuilder.RegisterModule(new WebModule());
+        ContainerBuilder.RegisterModule(new WebModule(connectionstring, migrationAssembly));
     });
 
     #endregion
@@ -79,7 +83,11 @@ try
     // Add services to the container.
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(connectionString));
+        options.UseSqlServer(connectionString, (x) => x.MigrationsAssembly(migrationAssembly)));
+
+    builder.Services.AddDbContext<BlogDbContext>(options =>
+        options.UseSqlServer(connectionString, (x) => x.MigrationsAssembly(migrationAssembly)));
+
 
     Log.Information(connectionString);
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();

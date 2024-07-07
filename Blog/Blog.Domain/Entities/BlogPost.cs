@@ -1,9 +1,14 @@
 ﻿namespace Blog.Domain.Entities
 {
-    public class BlogPost
+    public class BlogPost : IEntity<Guid>
     {
-        public string Title { get; set; }   
+        public Guid Id { get; set; }
 
-        
+        public string Title { get; set; }
+        public BlogPost()
+        {
+
+        }
+
     }
 }

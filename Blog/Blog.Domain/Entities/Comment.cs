@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Blog.Domain.Entities
 {
-    internal class Comment
+    public class Comment : IEntity<Guid>
     {
+        public Guid Id { get; set; }
     }
 }

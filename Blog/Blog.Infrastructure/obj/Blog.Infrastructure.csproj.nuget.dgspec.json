@@ -4,14 +4,79 @@
     "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
-        "projectName": "Blog.Infrastructure",
-        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectName": "Blog.Application",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectName": "Blog.Domain",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +110,84 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectName": "Blog.Infrastructure",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+              },
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

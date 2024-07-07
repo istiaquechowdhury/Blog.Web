@@ -8,16 +8,11 @@ namespace Blog.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IEmailSender _emailSender;
-       
-        private readonly IMembership _Membership;
-
-        public HomeController(ILogger<HomeController> logger, IEmailSender emailSender, IMembership membership)
+        
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _emailSender = emailSender;
-          
-            _Membership = membership;
+           
         }
 
         public IActionResult Index()
@@ -44,7 +39,7 @@ namespace Blog.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _emailSender.SendEmail("hello", "hello", "helo");
+               
                
             }
 

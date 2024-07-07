@@ -10,6 +10,7 @@
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "9.0.0",
           "Blog.Application": "1.0.0",
+          "Blog.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.4",
           "Microsoft.AspNetCore.Identity.UI": "8.0.4",
@@ -2028,6 +2029,14 @@
         }
       },
       "System.IO.Pipelines/7.0.0": {},
+      "System.Linq.Dynamic.Core/1.4.3": {
+        "runtime": {
+          "lib/net8.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "1.4.3.0"
+          }
+        }
+      },
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -2170,8 +2179,27 @@
         }
       },
       "Blog.Application/1.0.0": {
+        "dependencies": {
+          "Blog.Domain": "1.0.0"
+        },
         "runtime": {
           "Blog.Application.dll": {}
+        }
+      },
+      "Blog.Domain/1.0.0": {
+        "runtime": {
+          "Blog.Domain.dll": {}
+        }
+      },
+      "Blog.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Blog.Application": "1.0.0",
+          "Blog.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.4",
+          "System.Linq.Dynamic.Core": "1.4.3"
+        },
+        "runtime": {
+          "Blog.Infrastructure.dll": {}
         }
       }
     }
@@ -3330,6 +3358,13 @@
       "path": "system.io.pipelines/7.0.0",
       "hashPath": "system.io.pipelines.7.0.0.nupkg.sha512"
     },
+    "System.Linq.Dynamic.Core/1.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nT8wpw80ZeZ87CWrMflPqdfnUVJdYEEeFFNOZ2GXoR6bd/D/rKOC9cge9MQgxuOeH7j4NOKhHZDVRooG1Q8+sw==",
+      "path": "system.linq.dynamic.core/1.4.3",
+      "hashPath": "system.linq.dynamic.core.1.4.3.nupkg.sha512"
+    },
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -3485,6 +3520,16 @@
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
     "Blog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Blog.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

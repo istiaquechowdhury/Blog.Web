@@ -9,9 +9,16 @@ namespace Blog.Application.Services
 {
     public class BlogPostManagement : IBlogPostManagement
     {
+        private readonly IBlogUnitOfWork _blogunitOfWork;
+        public BlogPostManagement(IBlogUnitOfWork blogUnitOfWork) 
+        {
+            _blogunitOfWork = blogUnitOfWork;
+
+        }
         public void CreateBlog(BlogPost blogPost)
         {
-            
+            _blogunitOfWork.BlogPostRepository.Add(blogPost);
+            _blogunitOfWork.Save();    
         }
     }
 }

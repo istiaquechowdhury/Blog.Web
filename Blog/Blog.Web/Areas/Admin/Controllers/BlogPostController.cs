@@ -32,6 +32,7 @@ namespace Blog.Web.Areas.Admin.Controllers
             {
                 var blog = new BlogPost
                 {
+                    Id = Guid.NewGuid(),    
                     Title = model.Title
                 };
 

@@ -9,6 +9,6 @@ namespace Blog.Application.Services
 {
     public interface IBlogPostManagement
     {
-        public void CreateBlog(BlogPost blogPost);
+        void CreateBlog(BlogPost blogPost);
     }
 }

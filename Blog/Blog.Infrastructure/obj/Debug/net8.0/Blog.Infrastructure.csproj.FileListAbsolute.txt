@@ -1,7 +1,9 @@
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Infrastructure.deps.json
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Infrastructure.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Infrastructure.pdb
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Application.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Domain.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Application.pdb
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Domain.pdb
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\Blog.Infrastructure.csproj.AssemblyReference.cache
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\Blog.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,5 +16,3 @@ E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\Blog.Infrastruc
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\refint\Blog.Infrastructure.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\Blog.Infrastructure.pdb
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\obj\Debug\net8.0\ref\Blog.Infrastructure.dll
-E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Application.dll
-E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\bin\Debug\net8.0\Blog.Application.pdb

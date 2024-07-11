@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Blog.Domain.RepositoryContracts
 {
-    public interface IBlogPostRepository : IRepositoryBase<BlogPost,Guid>
+    public interface IBlogPostRepository : IRepositoryBase<BlogPost, Guid>
     {
+        (IList<BlogPost>, int total, int totaldisplay) GetPagedBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order);
     }
 }

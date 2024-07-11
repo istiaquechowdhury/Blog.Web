@@ -1,4 +1,5 @@
-﻿using Blog.Domain.Entities;
+﻿using Blog.Domain;
+using Blog.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,11 @@ namespace Blog.Application.Services
         {
             _blogunitOfWork.BlogPostRepository.Add(blogPost);
             _blogunitOfWork.Save();    
+        }
+
+        public (IList<BlogPost> data, int total, int totaldisplay) GetBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order)
+        {
+           return _blogunitOfWork.BlogPostRepository.GetPagedBlogPosts(pageIndex, pageSize, search, order);
         }
     }
 }

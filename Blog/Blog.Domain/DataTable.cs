@@ -54,7 +54,7 @@ namespace Blog.Domain
 
             for (int i = 0; i < Order.Length; i++)
             {
-                columnBuilder.Append(columns[Order[i].Column])
+                 columnBuilder.Append(columns[Order[i].Column])
                 .Append(" ")
                 .Append(Order[i].Dir);
 

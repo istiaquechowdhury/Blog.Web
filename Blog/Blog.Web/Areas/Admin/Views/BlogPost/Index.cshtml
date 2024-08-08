@@ -3,26 +3,55 @@
     ViewData["Title"] = "Index";
 }
 
+@section Styles
+{
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+}
 
 @section Scripts
 {
+    <script src="~/plugins//datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins///datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins//datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/jszip/jszip.min.js"></script>
+    <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
     <script>
-         $(function () {
-             $("#blogposts").DataTable({
-                 processing: true,
-                 serverSide: true,
-                 responsive: true,
-                 lengthChange: false,
-                 autoWidth: false,
-                 ajax: {
-                     url: "/Admin/BlogPost/GetBlogPostJsonData",
-                     type: "GET",
-                     contentType: "application/json",
-                     dataType: "json",
-                 },
-                 "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-             }).buttons().container().appendTo('#blogposts_wrapper .col-md-6:eq(0)');
-         });
+        $(function () {
+            $("#blogposts").DataTable({
+                processing: true,
+                serverSide: true,
+                responsive: true,
+                lengthChange: true,
+                autoWidth: false,
+                lengthMenu: [
+                    [10, 25, 50, -1],
+                    [10, 25, 50, 'All']
+                ],
+                ajax: {
+                    url: "/Admin/BlogPost/GetBlogPostJsonData",
+                    type: "POST",
+                    contentType: "application/json", //must be added
+                    dataType: "json", //better to add, not mandatory
+                    data: function (d) {
+                        d.SearchItem = {
+                        };
+                        return JSON.stringify(d);
+                    },
+                },
+                //dom: 'Bfrtip',
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#blogposts_wrapper .col-md-6:eq(0)');
+        });
     </script>
 }
 

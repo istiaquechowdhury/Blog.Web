@@ -21,7 +21,7 @@ namespace Blog.Infrastructure.Repositories
             if (string.IsNullOrWhiteSpace(search.Value))
                 return GetDynamic(null, order, null, pageIndex, pageSize, true);
             else
-                return GetDynamic(x => x.Title == search.Value, order, null, pageIndex, pageSize, true);
+                return GetDynamic(x => x.Title.Contains(search.Value), order, null, pageIndex, pageSize, true);
         }
     }
 }

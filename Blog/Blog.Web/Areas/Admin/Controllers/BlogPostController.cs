@@ -25,10 +25,11 @@ namespace Blog.Web.Areas.Admin.Controllers
 
         }
 
-        public JsonResult GetBlogPostJsonData( BlogPostListModel model)
+        [HttpPost]
+        public JsonResult GetBlogPostJsonData([FromBody] BlogPostListModel model)
         {
 
-            var result = _blogPostManagement.GetBlogPosts(model.PageIndex, model.PageSize, model.Search, model.FormatSortExpression("Title"));
+            var result = _blogPostManagement.GetBlogPosts(model.PageIndex, model.PageSize, model.Search, model.FormatSortExpression("Title", "Id"));
             var blogPostJsonData = new
             {
                 recordsTotal = result.total,

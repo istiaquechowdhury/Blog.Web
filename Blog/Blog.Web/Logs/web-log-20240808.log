@@ -16,3 +16,6 @@
 2024-08-08 16:09:27.419 +06:00 [INF] application is starting
 2024-08-08 16:09:27.961 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
 2024-08-08 16:09:31.257 +06:00 [INF] index
+2024-08-08 16:20:44.031 +06:00 [INF] application is starting
+2024-08-08 16:20:45.415 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-08 16:20:50.475 +06:00 [INF] index

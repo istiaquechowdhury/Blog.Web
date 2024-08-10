@@ -1,6 +1,4 @@
-﻿
-
-@model BlogPostCreateModel
+﻿@model BlogPostCreateModel
 @{
     ViewData["Title"] = "Create";
 }
@@ -19,7 +17,8 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form asp-area="Admin" asp-controller="BlogPost" asp-action="Create" asp-antiforgery="true"> 
+              <form asp-area="Admin" asp-controller="BlogPost" asp-action="Create" asp-antiforgery="true" method="post">
+                       
                 <div class="card-body">
                   <div class="form-group">
                     <label asp-for="Title"></label>

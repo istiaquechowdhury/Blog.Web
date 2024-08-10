@@ -15,6 +15,7 @@ namespace Blog.Infrastructure.Repositories
         public BlogPostRepository(BlogDbContext context) : base(context)
         {
         }
+       
 
         public (IList<BlogPost>,int total,int totaldisplay) GetPagedBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order)
         {
@@ -22,6 +23,18 @@ namespace Blog.Infrastructure.Repositories
                 return GetDynamic(null, order, null, pageIndex, pageSize, true);
             else
                 return GetDynamic(x => x.Title.Contains(search.Value), order, null, pageIndex, pageSize, true);
+        }
+
+        public bool IsTitleDuplicate(string title, Guid? id = null)
+        {
+            if (id.HasValue)
+            {
+                return GetCount(x => x.Id != id.Value && x.Title == title) > 0;
+            }
+            else
+            {
+                return GetCount(x => x.Title == title) > 0;
+            }
         }
     }
 }

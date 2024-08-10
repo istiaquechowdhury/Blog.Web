@@ -18,13 +18,41 @@ namespace Blog.Application.Services
         }
         public void CreateBlog(BlogPost blogPost)
         {
-            _blogunitOfWork.BlogPostRepository.Add(blogPost);
-            _blogunitOfWork.Save();    
+            if (!_blogunitOfWork.BlogPostRepository.IsTitleDuplicate(blogPost.Title))
+            {
+                _blogunitOfWork.BlogPostRepository.Add(blogPost);
+                _blogunitOfWork.Save();
+            }
+            else
+                throw new InvalidOperationException("Title should be unique.");
+
+        }
+
+        public void DeleteBlog(Guid id)
+        {
+             _blogunitOfWork.BlogPostRepository.Remove(id);
+            _blogunitOfWork.Save();
         }
 
         public (IList<BlogPost> data, int total, int totaldisplay) GetBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order)
         {
            return _blogunitOfWork.BlogPostRepository.GetPagedBlogPosts(pageIndex, pageSize, search, order);
+        }
+
+        public BlogPost GetBlogPosts(Guid id)
+        {
+            return _blogunitOfWork.BlogPostRepository.GetById(id);
+        }
+
+        public void UpdateBlog(BlogPost blogPost)
+        {
+            if (!_blogunitOfWork.BlogPostRepository.IsTitleDuplicate(blogPost.Title, blogPost.Id))
+            {
+                _blogunitOfWork.BlogPostRepository.Edit(blogPost);
+                _blogunitOfWork.Save();
+            }
+            else
+                throw new InvalidOperationException("Title should be unique.");
         }
     }
 }

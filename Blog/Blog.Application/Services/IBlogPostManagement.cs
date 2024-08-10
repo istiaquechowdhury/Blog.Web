@@ -12,6 +12,9 @@ namespace Blog.Application.Services
     public interface IBlogPostManagement
     {
         void CreateBlog(BlogPost blogPost);
+        void DeleteBlog(Guid id);
         (IList<BlogPost> data,int total,int totaldisplay) GetBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order);
+        BlogPost GetBlogPosts(Guid id);
+        void UpdateBlog(BlogPost blog);
     }
 }

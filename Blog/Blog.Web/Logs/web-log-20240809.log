@@ -1,0 +1,125 @@
+2024-08-09 17:52:07.422 +06:00 [INF] application is starting
+2024-08-09 17:52:10.430 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 17:52:15.626 +06:00 [INF] index
+2024-08-09 18:07:30.989 +06:00 [INF] application is starting
+2024-08-09 18:07:31.447 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:07:34.061 +06:00 [INF] index
+2024-08-09 18:20:52.977 +06:00 [INF] application is starting
+2024-08-09 18:20:53.281 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:20:55.244 +06:00 [INF] index
+2024-08-09 18:22:17.865 +06:00 [INF] application is starting
+2024-08-09 18:22:18.321 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:22:20.086 +06:00 [INF] index
+2024-08-09 18:23:58.594 +06:00 [INF] application is starting
+2024-08-09 18:23:59.002 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:24:01.029 +06:00 [INF] index
+2024-08-09 18:33:46.532 +06:00 [INF] application is starting
+2024-08-09 18:33:47.022 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:33:49.448 +06:00 [INF] index
+2024-08-09 18:46:52.106 +06:00 [INF] application is starting
+2024-08-09 18:46:52.507 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:46:54.496 +06:00 [INF] index
+2024-08-09 18:51:42.159 +06:00 [INF] application is starting
+2024-08-09 18:51:42.600 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 18:51:44.263 +06:00 [INF] index
+2024-08-09 19:03:09.145 +06:00 [INF] application is starting
+2024-08-09 19:03:09.587 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:03:11.738 +06:00 [INF] index
+2024-08-09 19:04:19.188 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:06:13.652 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:10:14.607 +06:00 [INF] application is starting
+2024-08-09 19:10:15.026 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:10:16.650 +06:00 [INF] index
+2024-08-09 19:10:45.474 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:11:05.895 +06:00 [INF] application is starting
+2024-08-09 19:11:06.357 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:11:08.277 +06:00 [INF] index
+2024-08-09 19:11:28.339 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:11:32.434 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:11:35.896 +06:00 [ERR] Blog post update failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 47
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 19:12:39.551 +06:00 [INF] application is starting
+2024-08-09 19:12:40.022 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:12:42.537 +06:00 [INF] index
+2024-08-09 19:13:46.444 +06:00 [INF] application is starting
+2024-08-09 19:13:46.891 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:13:48.983 +06:00 [INF] index
+2024-08-09 19:58:37.737 +06:00 [INF] application is starting
+2024-08-09 19:58:38.318 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 19:58:40.713 +06:00 [INF] index
+2024-08-09 20:04:50.504 +06:00 [INF] application is starting
+2024-08-09 20:04:51.082 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:04:53.358 +06:00 [INF] index
+2024-08-09 20:07:22.892 +06:00 [INF] application is starting
+2024-08-09 20:07:23.376 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:07:25.364 +06:00 [INF] index
+2024-08-09 20:15:05.727 +06:00 [INF] application is starting
+2024-08-09 20:15:06.055 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:15:07.693 +06:00 [INF] index
+2024-08-09 20:17:33.229 +06:00 [INF] application is starting
+2024-08-09 20:17:33.780 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:17:35.737 +06:00 [INF] index
+2024-08-09 20:20:49.802 +06:00 [INF] application is starting
+2024-08-09 20:20:50.142 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:20:52.125 +06:00 [INF] index
+2024-08-09 20:21:35.775 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.CreateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 27
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Create(BlogPostCreateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 71
+2024-08-09 20:23:43.735 +06:00 [INF] application is starting
+2024-08-09 20:23:44.118 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:23:45.586 +06:00 [INF] index
+2024-08-09 20:23:58.195 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.CreateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 27
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Create(BlogPostCreateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 71
+2024-08-09 20:25:51.539 +06:00 [INF] application is starting
+2024-08-09 20:25:51.959 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:25:53.856 +06:00 [INF] index
+2024-08-09 20:28:20.457 +06:00 [INF] application is starting
+2024-08-09 20:28:20.866 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:28:22.775 +06:00 [INF] index
+2024-08-09 20:28:40.900 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.CreateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 27
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Create(BlogPostCreateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 71
+2024-08-09 20:29:09.317 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 20:29:11.833 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 20:29:18.208 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-09 20:29:52.372 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model)
+2024-08-09 20:30:00.473 +06:00 [INF] application is starting
+2024-08-09 20:30:00.943 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-09 20:30:03.018 +06:00 [INF] index
+2024-08-09 20:30:21.436 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119

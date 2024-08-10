@@ -13,11 +13,13 @@ namespace Blog.Web.Areas.Admin.Controllers
     public class BlogPostController : Controller
     {
         private readonly IBlogPostManagement _blogPostManagement;
-      
-        public BlogPostController(IBlogPostManagement blogPostManagement) 
+        private readonly ILogger<BlogPostController> _logger;
+
+        public BlogPostController(ILogger<BlogPostController> logger,
+            IBlogPostManagement blogPostManagement) 
         {
             _blogPostManagement = blogPostManagement;
-           
+            _logger = logger;
         }
         public IActionResult Index()
         {
@@ -49,7 +51,8 @@ namespace Blog.Web.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var model = new BlogPostCreateModel();
+            return View(model);
         }
 
         [HttpPost,ValidateAntiForgeryToken]
@@ -59,18 +62,109 @@ namespace Blog.Web.Areas.Admin.Controllers
             {
                 var blog = new BlogPost
                 {
-                    Id = Guid.NewGuid(),    
+                    Id = Guid.NewGuid(),
                     Title = model.Title
                 };
+                try
+                {
+                    
+                    _blogPostManagement.CreateBlog(blog);
+
+                    TempData["success"] = "Data inserted successfully";
+
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    TempData["error"] = "Data insert falied,Data should be unique";
+                    _logger.LogError(ex, "Blog post creation failed");
+
+                }
+               
              
 
-                _blogPostManagement.CreateBlog(blog);
-                TempData["success"] = "Data Inserted Successfully";
+               
+              
                 return RedirectToAction("Index");   
             }
             return View(model);
 
         }
+        public IActionResult Update(Guid id)
+        {
+           
+            BlogPost Post = _blogPostManagement.GetBlogPosts(id);
+
+            var model = new BlogPostUpdateModel
+            {
+                Id = Post.Id,
+                Title = Post.Title,
+            };
+
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Update(BlogPostUpdateModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var blog = new BlogPost
+                {
+                    Id = model.Id,
+                    Title = model.Title
+                };
+                try
+                {
+                    _blogPostManagement.UpdateBlog(blog);
+
+                    TempData["success"] = "Data updated Successfully";
+
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    TempData["error"] = "Data update falied,Data should be unique";
+
+                    _logger.LogError(ex, "Blog post creation failed");
+                    
+                   return RedirectToAction("Index");
+
+
+                }
+            }
+            return View(model); 
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Delete(Guid id)
+        {
+             
+                try
+                {
+                    _blogPostManagement.DeleteBlog(id);
+
+                    TempData["success"] = "Data Deleted Successfully";
+
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    TempData["error"] = "Data Delete failed";
+
+                   _logger.LogError(ex, "Blog post creation failed");
+
+                    return RedirectToAction("Index");
+
+
+
+            }
+            
+           
+        }
+
+
+
 
 
     }

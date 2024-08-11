@@ -1,0 +1,12 @@
+2024-08-10 15:48:40.171 +06:00 [INF] application is starting
+2024-08-10 15:48:43.046 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-10 15:48:48.835 +06:00 [INF] index
+2024-08-10 15:49:21.705 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.CreateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 27
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Create(BlogPostCreateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 71
+2024-08-10 15:49:37.809 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 55
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 119
+2024-08-10 15:50:57.269 +06:00 [INF] index

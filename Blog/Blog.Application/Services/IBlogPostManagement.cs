@@ -1,4 +1,5 @@
 ﻿using Blog.Domain;
+using Blog.Domain.Dtos;
 using Blog.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ namespace Blog.Application.Services
         void CreateBlog(BlogPost blogPost);
         void DeleteBlog(Guid id);
         (IList<BlogPost> data,int total,int totaldisplay) GetBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order);
+        Task<(IList<BlogPostDto> data, int total, int totaldisplay)> GetBlogPostsSP(int pageIndex, int pageSize, BlogPostSearchDto search, string? order);
+
         BlogPost GetBlogPosts(Guid id);
         void UpdateBlog(BlogPost blog);
     }

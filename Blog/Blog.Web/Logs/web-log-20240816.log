@@ -1,0 +1,155 @@
+2024-08-16 00:34:15.694 +06:00 [INF] application is starting
+2024-08-16 00:34:16.205 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 00:34:21.256 +06:00 [INF] index
+2024-08-16 00:38:08.776 +06:00 [INF] application is starting
+2024-08-16 00:38:09.145 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 00:38:11.629 +06:00 [INF] index
+2024-08-16 00:45:46.673 +06:00 [INF] application is starting
+2024-08-16 00:45:48.326 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 00:45:52.743 +06:00 [INF] index
+2024-08-16 00:46:40.024 +06:00 [INF] application is starting
+2024-08-16 00:46:40.284 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 00:46:42.363 +06:00 [INF] index
+2024-08-16 14:18:49.388 +06:00 [INF] application is starting
+2024-08-16 14:18:51.504 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:19:00.561 +06:00 [INF] index
+2024-08-16 14:26:23.089 +06:00 [INF] application is starting
+2024-08-16 14:26:23.488 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:26:26.551 +06:00 [INF] index
+2024-08-16 14:38:46.452 +06:00 [INF] application is starting
+2024-08-16 14:38:46.865 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:38:49.644 +06:00 [INF] index
+2024-08-16 14:39:48.805 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.GetBlogPostJsonDataSP(BlogPostListModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 70
+   at lambda_method693(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-16 14:40:29.283 +06:00 [INF] application is starting
+2024-08-16 14:40:29.632 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:40:32.056 +06:00 [INF] index
+2024-08-16 14:41:53.210 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.GetBlogPostJsonDataSP(BlogPostListModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 70
+   at lambda_method700(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-16 14:44:18.221 +06:00 [INF] application is starting
+2024-08-16 14:44:18.570 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:44:21.314 +06:00 [INF] index
+2024-08-16 14:49:16.142 +06:00 [INF] application is starting
+2024-08-16 14:49:16.564 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:49:19.348 +06:00 [INF] index
+2024-08-16 14:51:11.630 +06:00 [INF] application is starting
+2024-08-16 14:51:11.946 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:51:14.655 +06:00 [INF] index
+2024-08-16 14:56:03.617 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.GetBlogPostJsonDataSP(BlogPostListModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 70
+   at lambda_method700(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-16 14:58:04.249 +06:00 [INF] application is starting
+2024-08-16 14:58:04.489 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 14:58:06.706 +06:00 [INF] index
+2024-08-16 16:11:23.172 +06:00 [INF] application is starting
+2024-08-16 16:11:23.975 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 16:11:28.620 +06:00 [INF] index
+2024-08-16 16:12:13.666 +06:00 [INF] application is starting
+2024-08-16 16:12:14.299 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 16:12:21.345 +06:00 [INF] index
+2024-08-16 16:20:12.400 +06:00 [INF] application is starting
+2024-08-16 16:20:14.418 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 16:20:18.385 +06:00 [INF] index
+2024-08-16 16:26:14.318 +06:00 [INF] application is starting
+2024-08-16 16:26:15.384 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 16:26:17.981 +06:00 [INF] index
+2024-08-16 16:31:35.750 +06:00 [INF] application is starting
+2024-08-16 16:31:36.086 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 16:31:39.064 +06:00 [INF] index
+2024-08-16 18:09:51.214 +06:00 [INF] application is starting
+2024-08-16 18:09:53.092 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 18:10:01.335 +06:00 [INF] index
+2024-08-16 23:26:03.144 +06:00 [INF] application is starting
+2024-08-16 23:26:05.311 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 23:26:11.034 +06:00 [INF] index
+2024-08-16 23:26:31.769 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The partial view '_ResponsePartial' was not found. The following locations were searched:
+/Areas/Admin/Views/BlogPost/_ResponsePartial.cshtml
+/Areas/Admin/Views/Shared/_ResponsePartial.cshtml
+/Views/Shared/_ResponsePartial.cshtml
+/Pages/Shared/_ResponsePartial.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_BlogPost_IndexSP.ExecuteAsync() in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Views\BlogPost\IndexSP.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-16 23:28:46.335 +06:00 [INF] application is starting
+2024-08-16 23:28:46.847 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-16 23:28:49.269 +06:00 [INF] index

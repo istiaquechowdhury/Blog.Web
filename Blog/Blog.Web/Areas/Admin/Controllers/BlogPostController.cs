@@ -13,17 +13,29 @@ namespace Blog.Web.Areas.Admin.Controllers
     public class BlogPostController : Controller
     {
         private readonly IBlogPostManagement _blogPostManagement;
+        private readonly ICategoryMangement _categoryManagement;
         private readonly ILogger<BlogPostController> _logger;
 
         public BlogPostController(ILogger<BlogPostController> logger,
-            IBlogPostManagement blogPostManagement) 
+            IBlogPostManagement blogPostManagement,
+                   ICategoryMangement categoryMangement) 
         {
             _blogPostManagement = blogPostManagement;
             _logger = logger;
+            _categoryManagement = categoryMangement;
         }
         public IActionResult Index()
         {
             return View();
+
+        }
+
+        public IActionResult IndexSP()
+        {
+            var model = new BlogPostListModel();
+            model.SetCategoryValues(_categoryManagement.GetCategories());
+
+            return View(model);
 
         }
 
@@ -39,8 +51,37 @@ namespace Blog.Web.Areas.Admin.Controllers
                 data = (from record in result.data
                         select new string[]
                         {
-                                HttpUtility.HtmlEncode(record.Title),
-                                record.Id.ToString()
+                            HttpUtility.HtmlEncode(record.Title),
+                            HttpUtility.HtmlEncode(record.Body),
+                            HttpUtility.HtmlEncode(record.Category?.Name),
+                            record.PostDate.ToString(),
+                            record.Id.ToString()
+                        }
+                    ).ToArray()
+            };
+
+            return Json(blogPostJsonData);
+
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> GetBlogPostJsonDataSP([FromBody] BlogPostListModel model)
+        {
+
+            var result = await _blogPostManagement.GetBlogPostsSP(model.PageIndex, model.PageSize,
+                model.SearchItem, model.FormatSortExpression("Title", "Id"));
+            var blogPostJsonData = new
+            {
+                recordsTotal = result.total,
+                recordsFiltered = result.totaldisplay,
+                data = (from record in result.data
+                        select new string[]
+                        {
+                               HttpUtility.HtmlEncode(record.Title),
+                               HttpUtility.HtmlEncode(record.Body),
+                               HttpUtility.HtmlEncode(record.CategoryName),
+                               record.PostDate.ToString(),
+                               record.Id.ToString()
                         }
                     ).ToArray()
             };
@@ -158,7 +199,7 @@ namespace Blog.Web.Areas.Admin.Controllers
 
 
 
-            }
+                }
             
            
         }

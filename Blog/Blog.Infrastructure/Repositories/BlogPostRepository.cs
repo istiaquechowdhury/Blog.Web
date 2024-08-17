@@ -20,9 +20,9 @@ namespace Blog.Infrastructure.Repositories
         public (IList<BlogPost>,int total,int totaldisplay) GetPagedBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order)
         {
             if (string.IsNullOrWhiteSpace(search.Value))
-                return GetDynamic(null, order, null, pageIndex, pageSize, true);
+                return GetDynamic(null, order, y => y.Include(z => z.Category), pageIndex, pageSize, true);
             else
-                return GetDynamic(x => x.Title.Contains(search.Value), order, null, pageIndex, pageSize, true);
+                return GetDynamic(x => x.Title.Contains(search.Value), order, y=> y.Include(z=>z.Category), pageIndex, pageSize, true);
         }
 
         public bool IsTitleDuplicate(string title, Guid? id = null)

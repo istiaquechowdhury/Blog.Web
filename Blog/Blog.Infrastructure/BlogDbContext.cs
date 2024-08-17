@@ -13,7 +13,7 @@ namespace Blog.Infrastructure
         private readonly string _connectionString;
         private readonly string _migrationAssembly;
 
-        public BlogDbContext(string connectionString, string migrationAssembly)
+      public BlogDbContext(string connectionString, string migrationAssembly)
         {
             _connectionString = connectionString;
             _migrationAssembly = migrationAssembly;

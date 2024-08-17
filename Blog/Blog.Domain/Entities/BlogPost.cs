@@ -8,7 +8,9 @@ namespace Blog.Domain.Entities
 
         public string Title { get; set; }
 
-        public string Body { get; set; }    
+        public string Body { get; set; }  
+        
+        public DateTime PostDate { get; set; }  
 
         public Category Category { get; set; }  
         

@@ -1,10 +1,12 @@
 ﻿using Blog.Domain;
+using Blog.Domain.Dtos;
 using Blog.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace Blog.Application.Services
 {
@@ -42,6 +44,11 @@ namespace Blog.Application.Services
         public BlogPost GetBlogPosts(Guid id)
         {
             return _blogunitOfWork.BlogPostRepository.GetById(id);
+        }
+
+        public async Task<(IList<BlogPostDto> data, int total, int totaldisplay)> GetBlogPostsSP(int pageIndex, int pageSize, BlogPostSearchDto search, string? order)
+        {
+            return await _blogunitOfWork.GetPagedBlogPostsUsingSPAsync(pageIndex, pageSize, search, order);
         }
 
         public void UpdateBlog(BlogPost blogPost)

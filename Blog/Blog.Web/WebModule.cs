@@ -38,6 +38,14 @@ namespace Blog.Web
                 .As<IBlogPostManagement>()
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<CategoryRepository>()
+               .As<ICategoryRepository>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<CategoryManagement>()
+              .As<ICategoryMangement>()
+              .InstancePerLifetimeScope();
+
         }
 
     }

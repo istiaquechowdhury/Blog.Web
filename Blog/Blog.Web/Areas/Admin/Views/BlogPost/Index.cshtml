@@ -51,7 +51,7 @@
                 columnDefs: [
                     {
                         orderable: false,
-                        targets: 1,
+                        targets: 4,
                         render: function (data, type, row) {
                             console.log(type);
                             return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href='/admin/blogpost/update/${data}'" value='${data}'>
@@ -68,9 +68,9 @@
                     }
                 ],
                 dom: '<"row"<"col-sm-12 col-md-6"lB><"col-sm-12 col-md-6"f>><"row"<"col-sm-12"tr>><"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
-                //dom: 'Bfrtip',
                 "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#blogposts_wrapper .col-md-6:eq(0)');
+
             $('#blogposts').on('click', '.show-bs-modal', function (event) {
                 let id = $(this).data("id");
                 let modal = $("#modal-default");
@@ -100,6 +100,9 @@
             <thead>
                 <tr>
                     <th>Title</th>
+                    <th>Body</th>
+                    <th>Category</th>
+                    <th>PostDate</th>
                     <th>Actions</th>
                     
                 </tr>
@@ -108,7 +111,11 @@
             <tfoot>
                 <tr>
                     <th>Title</th>
+                    <th>Body</th>
+                    <th>Category</th>
+                    <th>PostDate</th>
                     <th>Actions</th>
+
                 </tr>
             </tfoot>
         </table>

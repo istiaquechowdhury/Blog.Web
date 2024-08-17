@@ -1,0 +1,163 @@
+2024-08-14 11:55:50.764 +06:00 [INF] application is starting
+2024-08-14 11:55:51.152 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 11:55:51.607 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 11:59:27.685 +06:00 [INF] application is starting
+2024-08-14 11:59:28.006 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 11:59:28.607 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 15:24:31.654 +06:00 [INF] application is starting
+2024-08-14 15:24:34.005 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 15:24:40.765 +06:00 [INF] index
+2024-08-14 15:26:30.290 +06:00 [INF] application is starting
+2024-08-14 15:26:30.689 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 15:26:32.977 +06:00 [INF] index
+2024-08-14 15:27:06.270 +06:00 [ERR] Blog post creation failed
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at Blog.Infrastructure.Repositories.Repository`2.Remove(TEntity entityToDelete) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\Repositories\Repository.cs:line 296
+   at Blog.Infrastructure.Repositories.Repository`2.Remove(TKey id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\Repositories\Repository.cs:line 292
+   at Blog.Application.Services.BlogPostManagement.DeleteBlog(Guid id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 33
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Delete(Guid id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 173
+2024-08-14 15:27:34.167 +06:00 [ERR] Blog post creation failed
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Entry[TEntity](TEntity entity)
+   at Blog.Infrastructure.Repositories.Repository`2.Remove(TEntity entityToDelete) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\Repositories\Repository.cs:line 296
+   at Blog.Infrastructure.Repositories.Repository`2.Remove(TKey id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Infrastructure\Repositories\Repository.cs:line 292
+   at Blog.Application.Services.BlogPostManagement.DeleteBlog(Guid id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 33
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Delete(Guid id) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 173
+2024-08-14 15:35:26.779 +06:00 [INF] application is starting
+2024-08-14 15:35:27.182 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 15:35:29.548 +06:00 [INF] index
+2024-08-14 16:23:34.570 +06:00 [INF] application is starting
+2024-08-14 16:23:34.854 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:23:35.318 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:29:04.664 +06:00 [INF] application is starting
+2024-08-14 16:29:04.877 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:29:05.350 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:31:45.821 +06:00 [INF] application is starting
+2024-08-14 16:31:46.031 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:31:46.440 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:34:28.587 +06:00 [INF] application is starting
+2024-08-14 16:34:28.654 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:34:29.016 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:34:55.723 +06:00 [INF] application is starting
+2024-08-14 16:34:55.920 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:34:56.253 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:42:19.457 +06:00 [INF] application is starting
+2024-08-14 16:42:19.622 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:42:19.961 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:42:34.934 +06:00 [INF] application is starting
+2024-08-14 16:42:35.009 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:42:35.186 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:42:50.996 +06:00 [INF] application is starting
+2024-08-14 16:42:51.079 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:42:51.250 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:48:30.812 +06:00 [INF] application is starting
+2024-08-14 16:48:30.895 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:48:31.101 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:50:12.910 +06:00 [INF] application is starting
+2024-08-14 16:50:12.999 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:50:13.407 +06:00 [FTL] failed to start the Program
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Program.cs:line 99
+2024-08-14 16:51:36.043 +06:00 [INF] application is starting
+2024-08-14 16:51:36.567 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:51:39.054 +06:00 [INF] index
+2024-08-14 16:53:21.900 +06:00 [INF] application is starting
+2024-08-14 16:53:22.653 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-14 16:53:26.087 +06:00 [INF] index

@@ -41,9 +41,9 @@ namespace Blog.Application.Services
            return _blogunitOfWork.BlogPostRepository.GetPagedBlogPosts(pageIndex, pageSize, search, order);
         }
 
-        public BlogPost GetBlogPosts(Guid id)
+        public async Task<BlogPost> GetBlogPost(Guid id)
         {
-            return _blogunitOfWork.BlogPostRepository.GetById(id);
+            return await _blogunitOfWork.BlogPostRepository.GetBlogPost(id);
         }
 
         public async Task<(IList<BlogPostDto> data, int total, int totaldisplay)> GetBlogPostsSP(int pageIndex, int pageSize, BlogPostSearchDto search, string? order)

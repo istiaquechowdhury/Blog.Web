@@ -1,9 +1,11 @@
-﻿using Blog.Application;
+﻿using AutoMapper;
+using Blog.Application;
 using Blog.Application.Services;
 using Blog.Domain.Entities;
 using Blog.Infrastructure.Repositories;
 using Blog.Web.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using System.Web;
 
 namespace Blog.Web.Areas.Admin.Controllers
@@ -15,14 +17,18 @@ namespace Blog.Web.Areas.Admin.Controllers
         private readonly IBlogPostManagement _blogPostManagement;
         private readonly ICategoryMangement _categoryManagement;
         private readonly ILogger<BlogPostController> _logger;
+        private readonly IMapper _mapper;
 
         public BlogPostController(ILogger<BlogPostController> logger,
             IBlogPostManagement blogPostManagement,
-                   ICategoryMangement categoryMangement) 
+            ICategoryMangement categoryMangement,
+            IMapper mapper) 
         {
             _blogPostManagement = blogPostManagement;
             _logger = logger;
             _categoryManagement = categoryMangement;
+            _mapper = mapper;
+            
         }
         public IActionResult Index()
         {
@@ -90,9 +96,11 @@ namespace Blog.Web.Areas.Admin.Controllers
 
         }
 
+
         public IActionResult Create()
         {
             var model = new BlogPostCreateModel();
+            model.SetCategoryValues(_categoryManagement.GetCategories());
             return View(model);
         }
 
@@ -101,15 +109,15 @@ namespace Blog.Web.Areas.Admin.Controllers
         {
             if(ModelState.IsValid)
             {
-                var blog = new BlogPost
-                {
-                    Id = Guid.NewGuid(),
-                    Title = model.Title
-                };
+                var Blog = _mapper.Map<BlogPost>(model);
+                Blog.Id = Guid.NewGuid();
+                Blog.PostDate = DateTime.Now;
+                Blog.Category = _categoryManagement.GetCategory(model.CategoryId);
+
                 try
                 {
                     
-                    _blogPostManagement.CreateBlog(blog);
+                    _blogPostManagement.CreateBlog(Blog);
 
                     TempData["success"] = "Data inserted successfully";
 
@@ -128,36 +136,33 @@ namespace Blog.Web.Areas.Admin.Controllers
               
                 return RedirectToAction("Index");   
             }
+
+            model.SetCategoryValues(_categoryManagement.GetCategories());
             return View(model);
 
         }
-        public IActionResult Update(Guid id)
+        public async Task<IActionResult> Update(Guid id)
         {
            
-            BlogPost Post = _blogPostManagement.GetBlogPosts(id);
-
-            var model = new BlogPostUpdateModel
-            {
-                Id = Post.Id,
-                Title = Post.Title,
-            };
+            BlogPost Post = await _blogPostManagement.GetBlogPost(id);
+            var model = _mapper.Map<BlogPostUpdateModel>(Post);
+            model.SetCategoryValues(_categoryManagement.GetCategories());
 
             return View(model);
         }
 
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Update(BlogPostUpdateModel model)
+        public async Task<IActionResult> Update(BlogPostUpdateModel model)
         {
             if (ModelState.IsValid)
             {
-                var blog = new BlogPost
-                {
-                    Id = model.Id,
-                    Title = model.Title
-                };
+                var post = await _blogPostManagement.GetBlogPost(model.Id);
+                post = _mapper.Map(model, post);
+
+                post.Category =  _categoryManagement.GetCategory(model.CategoryId);
                 try
                 {
-                    _blogPostManagement.UpdateBlog(blog);
+                    _blogPostManagement.UpdateBlog(post);
 
                     TempData["success"] = "Data updated Successfully";
 

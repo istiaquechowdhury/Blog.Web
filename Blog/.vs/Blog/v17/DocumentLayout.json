@@ -1,12 +1,309 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\models\\blogpostcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\models\\blogpostcreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\views\\blogpost\\indexsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\blogpost\\indexsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.domain\\repositorycontracts\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|solutionrelative:blog.domain\\repositorycontracts\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|solutionrelative:blog.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.infrastructure\\repositories\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|solutionrelative:blog.infrastructure\\repositories\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\models\\blogpostlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\models\\blogpostlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\controllers\\blogpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.infrastructure\\unitofworks\\blogunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|solutionrelative:blog.infrastructure\\unitofworks\\blogunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.domain\\dtos\\blogpostsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|solutionrelative:blog.domain\\dtos\\blogpostsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.domain\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42EC8BA4-BB9A-4633-B68E-08B28AE4BC00}|Blog.Domain\\Blog.Domain.csproj|solutionrelative:blog.domain\\dtos\\blogpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2992C55A-77A7-4FEF-BDF9-4A18572A132C}|Blog.Application\\Blog.Application.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.application\\services\\blogpostmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2992C55A-77A7-4FEF-BDF9-4A18572A132C}|Blog.Application\\Blog.Application.csproj|solutionrelative:blog.application\\services\\blogpostmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\views\\blogpost\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\blogpost\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\views\\blogpost\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\views\\blogpost\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.web\\areas\\admin\\models\\blogpostupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0732F9C8-2C30-461D-8400-6113262ED3BD}|Blog.Web\\Blog.Web.csproj|solutionrelative:blog.web\\areas\\admin\\models\\blogpostupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2992C55A-77A7-4FEF-BDF9-4A18572A132C}|Blog.Application\\Blog.Application.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.application\\services\\categorymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2992C55A-77A7-4FEF-BDF9-4A18572A132C}|Blog.Application\\Blog.Application.csproj|solutionrelative:blog.application\\services\\categorymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.infrastructure\\razorutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|solutionrelative:blog.infrastructure\\razorutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|e:\\aspnet-b10\\blogpractice.web\\blog\\blog.infrastructure\\blog.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40DCD12D-69C5-4E38-A7E6-BD1D2C53614E}|Blog.Infrastructure\\Blog.Infrastructure.csproj|solutionrelative:blog.infrastructure\\blog.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Program.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Program.cs",
+              "RelativeToolTip": "Blog.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T12:02:36.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Blog.Infrastructure.csproj",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Blog.Infrastructure\\Blog.Infrastructure.csproj",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+              "RelativeToolTip": "Blog.Infrastructure\\Blog.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-24T11:24:33.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RazorUtility.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\RazorUtility.cs",
+              "RelativeDocumentMoniker": "Blog.Infrastructure\\RazorUtility.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\RazorUtility.cs",
+              "RelativeToolTip": "Blog.Infrastructure\\RazorUtility.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T11:14:09.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryManagement.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Services\\CategoryManagement.cs",
+              "RelativeDocumentMoniker": "Blog.Application\\Services\\CategoryManagement.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Services\\CategoryManagement.cs",
+              "RelativeToolTip": "Blog.Application\\Services\\CategoryManagement.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:06:50.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogPostCreateModel.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostCreateModel.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Models\\BlogPostCreateModel.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostCreateModel.cs",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Models\\BlogPostCreateModel.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAtwBoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:05:50.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BlogPostUpdateModel.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostUpdateModel.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Models\\BlogPostUpdateModel.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostUpdateModel.cs",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Models\\BlogPostUpdateModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T10:05:24.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Create.cshtml",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Create.cshtml",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Create.cshtml",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T09:28:28.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Update.cshtml",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Update.cshtml",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Update.cshtml",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\Update.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T09:27:52.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BlogPostManagement.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Services\\BlogPostManagement.cs",
+              "RelativeDocumentMoniker": "Blog.Application\\Services\\BlogPostManagement.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Services\\BlogPostManagement.cs",
+              "RelativeToolTip": "Blog.Application\\Services\\BlogPostManagement.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAMwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T09:22:11.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBlogPostRepository.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\RepositoryContracts\\IBlogPostRepository.cs",
+              "RelativeDocumentMoniker": "Blog.Domain\\RepositoryContracts\\IBlogPostRepository.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\RepositoryContracts\\IBlogPostRepository.cs",
+              "RelativeToolTip": "Blog.Domain\\RepositoryContracts\\IBlogPostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T09:21:50.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Blog.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Blog.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAvwA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T09:21:36.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogPostRepository.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Repositories\\BlogPostRepository.cs",
+              "RelativeDocumentMoniker": "Blog.Infrastructure\\Repositories\\BlogPostRepository.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Repositories\\BlogPostRepository.cs",
+              "RelativeToolTip": "Blog.Infrastructure\\Repositories\\BlogPostRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAvwBAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T09:20:57.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlogPostListModel.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostListModel.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Models\\BlogPostListModel.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Models\\BlogPostListModel.cs",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Models\\BlogPostListModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T08:30:26.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogPostController.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\BlogPostController.cs",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Controllers\\BlogPostController.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Controllers\\BlogPostController.cs",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Controllers\\BlogPostController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAnwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T08:24:53.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlogUnitOfWork.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\UnitOfWorks\\BlogUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Blog.Infrastructure\\UnitOfWorks\\BlogUnitOfWork.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\UnitOfWorks\\BlogUnitOfWork.cs",
+              "RelativeToolTip": "Blog.Infrastructure\\UnitOfWorks\\BlogUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T19:41:37.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BlogPostSearchDto.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Dtos\\BlogPostSearchDto.cs",
+              "RelativeDocumentMoniker": "Blog.Domain\\Dtos\\BlogPostSearchDto.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Dtos\\BlogPostSearchDto.cs",
+              "RelativeToolTip": "Blog.Domain\\Dtos\\BlogPostSearchDto.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAvwA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T19:39:05.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BlogPostDto.cs",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Dtos\\BlogPostDto.cs",
+              "RelativeDocumentMoniker": "Blog.Domain\\Dtos\\BlogPostDto.cs",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Dtos\\BlogPostDto.cs",
+              "RelativeToolTip": "Blog.Domain\\Dtos\\BlogPostDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T19:38:26.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexSP.cshtml",
+              "DocumentMoniker": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\IndexSP.cshtml",
+              "RelativeDocumentMoniker": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\IndexSP.cshtml",
+              "ToolTip": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Areas\\Admin\\Views\\BlogPost\\IndexSP.cshtml",
+              "RelativeToolTip": "Blog.Web\\Areas\\Admin\\Views\\BlogPost\\IndexSP.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T19:23:58.359Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

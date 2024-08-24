@@ -308,8 +308,12 @@ namespace Blog.Infrastructure.Repositories
 
         public virtual void Edit(TEntity entityToUpdate)
         {
-            _dbSet.Attach(entityToUpdate);
-            _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
+            if (!_dbSet.Local.Any(x => x == entityToUpdate))
+            {
+                _dbSet.Attach(entityToUpdate);
+                _dbContext.Entry(entityToUpdate).State = EntityState.Modified;
+
+            }
         }
 
         public virtual IList<TEntity> Get(Expression<Func<TEntity, bool>> filter,

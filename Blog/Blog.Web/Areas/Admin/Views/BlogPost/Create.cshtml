@@ -15,25 +15,39 @@
               <div class="card-header">
                 <h3 class="card-title">Create a Post</h3>
               </div>
+                    <form asp-area="Admin" asp-controller="BlogPost" asp-action="Create" asp-antiforgery="true" method="post">
+
+                      
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label asp-for="Title"></label>
+                                <input type="text" asp-for="Title" class="form-control">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Body"></label>
+                                <textarea asp-for="Body" class="form-control"></textarea>
+                                <span asp-validation-for="Body" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="CategoryId"></label>
+                                <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control"></select>
+                                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            </div>
+
+
+
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
               <!-- /.card-header -->
               <!-- form start -->
-              <form asp-area="Admin" asp-controller="BlogPost" asp-action="Create" asp-antiforgery="true" method="post">
-                       
-                <div class="card-body">
-                  <div class="form-group">
-                    <label asp-for="Title"></label>
-                    <input type="text" asp-for="Title" class="form-control">
-                  </div>
-                  
-                  
-                  
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
+             
             </div>
             <!-- /.card -->
 
@@ -57,3 +71,8 @@
         <!-- /.row -->
       </div><!-- /.container-fluid -->
    </section>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

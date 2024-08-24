@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {}
+    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {}
   },
   "projects": {
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
         "projectName": "Blog.Application",
-        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
         "projectName": "Blog.Domain",
-        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,14 +130,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
         "projectName": "Blog.Infrastructure",
-        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,11 +155,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
               },
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               }
             }
           }
@@ -179,6 +179,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -208,14 +212,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {
+    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
         "projectName": "Blog.Web",
-        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -233,14 +237,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
               },
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               },
-              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj"
+              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj"
               }
             }
           }
@@ -260,6 +264,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"

@@ -25,7 +25,6 @@
     <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
-
     <script>
         $(function () {
             $("#blogposts").DataTable({
@@ -47,8 +46,8 @@
                         d.SearchItem = {
                             Title: $("#SearchItem_Title").val(),
                             CategoryId: $("#SearchItem_CategoryId").val(),
-                            //CreateDateFrom: $("#SearchItem_CreateDateFrom").val() === "" ? "2/2/1990 12:00 AM" : $("#SearchItem_CreateDateFrom").val(),
-                            //CreateDateTo: $("#SearchItem_CreateDateTo").val() === "" ? "2/2/2050 12:00 AM" : $("#SearchItem_CreateDateTo").val()
+                            CreateDateFrom: $("#SearchItem_CreateDateFrom").val(),
+                            CreateDateTo: $("#SearchItem_CreateDateTo").val()
                         };
                         return JSON.stringify(d);
                     },
@@ -60,15 +59,15 @@
                         render: function (data, type, row) {
                             console.log(type);
                             return `<button type="submit" class="btn btn-info btn-sm" onclick="window.location.href='/admin/blogpost/update/${data}'" value='${data}'>
-                                                                        <i class="fas fa-pencil-alt">
-                                                                        </i>
-                                                                        Edit
-                                                                    </button>
-                                                                    <button type="submit" class="btn btn-danger btn-sm show-bs-modal" data-id='${data}' value='${data}'>
-                                                                        <i class="fas fa-trash">
-                                                                        </i>
-                                                                        Delete
-                                                                    </button>`;
+                                                                <i class="fas fa-pencil-alt">
+                                                                </i>
+                                                                Edit
+                                                            </button>
+                                                            <button type="submit" class="btn btn-danger btn-sm show-bs-modal" data-id='${data}' value='${data}'>
+                                                                <i class="fas fa-trash">
+                                                                </i>
+                                                                Delete
+                                                            </button>`;
                         }
                     }
                 ],
@@ -94,7 +93,6 @@
             });
         });
     </script>
-
 
 }
 
@@ -182,4 +180,7 @@
 
 
 
+
+
+ 
 

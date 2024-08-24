@@ -10,3 +10,15 @@ E:\Aspnet-B10\Blog.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Domain\obj\Debug\net8.0\refint\Blog.Domain.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.pdb
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Domain\obj\Debug\net8.0\ref\Blog.Domain.dll
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\bin\Debug\net8.0\Blog.Domain.deps.json
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\bin\Debug\net8.0\Blog.Domain.dll
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\bin\Debug\net8.0\Blog.Domain.pdb
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.AssemblyInfoInputs.cache
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.AssemblyInfo.cs
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.csproj.CoreCompileInputs.cache
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.sourcelink.json
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.dll
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\refint\Blog.Domain.dll
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\Blog.Domain.pdb
+E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Domain\obj\Debug\net8.0\ref\Blog.Domain.dll

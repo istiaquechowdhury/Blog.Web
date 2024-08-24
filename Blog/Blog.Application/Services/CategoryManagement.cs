@@ -20,6 +20,9 @@ namespace Blog.Application.Services
             return _blogunitOfWork.CategoryRepository.GetAll();
         }
 
-
+        public Category GetCategory(Guid Id)
+        {
+            return _blogunitOfWork.CategoryRepository.GetById(Id);
+        }
     }
 }

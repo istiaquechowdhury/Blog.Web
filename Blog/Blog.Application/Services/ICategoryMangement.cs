@@ -10,6 +10,6 @@ namespace Blog.Application.Services
     public interface ICategoryMangement
     {
         public IList<Category> GetCategories();
-      
+        Category GetCategory(Guid id);
     }
 }

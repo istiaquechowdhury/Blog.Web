@@ -15,7 +15,11 @@ namespace Blog.Infrastructure.Repositories
         public BlogPostRepository(BlogDbContext context) : base(context)
         {
         }
-       
+
+        public async Task< BlogPost> GetBlogPost(Guid id)
+        {
+            return (await GetAsync(x => x.Id == id, y => y.Include(z => z.Category))).FirstOrDefault();
+        }
 
         public (IList<BlogPost>,int total,int totaldisplay) GetPagedBlogPosts(int pageIndex, int pageSize, DataTablesSearch search, string? order)
         {

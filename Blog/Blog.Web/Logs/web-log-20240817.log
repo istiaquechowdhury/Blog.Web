@@ -57,3 +57,6 @@ System.InvalidOperationException: The partial view '_ResponsePartial' was not fo
 2024-08-17 12:23:34.123 +06:00 [INF] application is starting
 2024-08-17 12:23:34.405 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
 2024-08-17 12:23:37.478 +06:00 [INF] index
+2024-08-17 12:55:47.711 +06:00 [INF] application is starting
+2024-08-17 12:55:48.074 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-17 12:55:50.824 +06:00 [INF] index

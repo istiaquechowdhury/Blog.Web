@@ -44,6 +44,7 @@
                     dataType: "json", //better to add, not mandatory
                     data: function (d) {
                         d.SearchItem = {
+                           
                         };
                         return JSON.stringify(d);
                     },
@@ -83,6 +84,7 @@
             $("#deleteButton").click(function () {
                 $("#deleteForm").submit();
             });
+           
         });
     </script>
 }

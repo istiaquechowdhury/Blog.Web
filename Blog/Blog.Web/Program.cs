@@ -9,6 +9,9 @@ using Serilog.Sinks.MSSqlServer;
 using Blog.Web;
 using System.Reflection;
 using Blog.Infrastructure;
+using Blog.Web.Models;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using AutoMapper;
 
 
 
@@ -66,6 +69,9 @@ try
 
     #endregion
 
+   
+
+
     #region General logger
 
     builder.Host.UseSerilog((ctx, lc) => lc
@@ -76,6 +82,7 @@ try
        );
 
     #endregion
+
 
 
 
@@ -95,6 +102,10 @@ try
     builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
         .AddEntityFrameworkStores<ApplicationDbContext>();
     builder.Services.AddControllersWithViews();
+
+    #region Automapper Config
+    builder.Services.AddAutoMapper(typeof(WebProfile));
+    #endregion
 
     var app = builder.Build();
 

@@ -14,5 +14,7 @@ namespace Blog.Domain.RepositoryContracts
 
 
         public bool IsTitleDuplicate(string title,Guid? id = null);
+
+        Task <BlogPost> GetBlogPost(Guid id);  
     }
 }

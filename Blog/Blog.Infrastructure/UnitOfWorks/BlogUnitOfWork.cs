@@ -24,9 +24,8 @@ namespace Blog.Infrastructure.UnitOfWorks
             BlogPostRepository = _BlogPostRepository;
             CategoryRepository = categoryRepository;
         }
-
-        public async Task<(IList<BlogPostDto> data, int Total, int TotalDisplay)> GetPagedBlogPostsUsingSPAsync(int pageIndex, int pageSize,
-            BlogPostSearchDto search, string? order)
+        public async Task<(IList<BlogPostDto> data, int Total, int TotalDisplay)> GetPagedBlogPostsUsingSPAsync(int pageIndex,
+           int pageSize, BlogPostSearchDto search, string? order)
         {
             var procedureName = "GetBlogPosts";
 
@@ -36,8 +35,10 @@ namespace Blog.Infrastructure.UnitOfWorks
                     { "PageIndex", pageIndex },
                     { "PageSize", pageSize },
                     { "OrderBy", order },
-                    { "Title", search.Title == string.Empty? null : search.Title},
-                    {"CategoryId",search.CategoryId == Guid.Empty ? null : search.CategoryId},
+                    { "PostDateFrom", string.IsNullOrEmpty(search.CreateDateFrom) ? null : DateTime.Parse(search.CreateDateFrom) },
+                    { "PostDateTo", string.IsNullOrEmpty(search.CreateDateTo)? null : DateTime.Parse(search.CreateDateTo) },
+                    { "Title", string.IsNullOrEmpty(search.Title) ? null : search.Title },
+                    { "CategoryId", string.IsNullOrEmpty(search.CategoryId) ? null : Guid.Parse(search.CategoryId) }
                 },
                 new Dictionary<string, Type>
                 {
@@ -47,5 +48,7 @@ namespace Blog.Infrastructure.UnitOfWorks
 
             return (result.result, (int)result.outValues["Total"], (int)result.outValues["TotalDisplay"]);
         }
+
+
     }
 }

@@ -12,3 +12,10 @@ System.InvalidOperationException: Title should be unique.
 System.InvalidOperationException: Title should be unique.
    at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 62
    at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 165
+2024-08-24 18:31:10.125 +06:00 [INF] application is starting
+2024-08-24 18:31:10.502 +06:00 [INF] Server=DESKTOP-5ALLRCU\SQLEXPRESS;Database=Blog;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true
+2024-08-24 18:31:13.674 +06:00 [INF] index
+2024-08-24 18:34:36.214 +06:00 [ERR] Blog post creation failed
+System.InvalidOperationException: Title should be unique.
+   at Blog.Application.Services.BlogPostManagement.UpdateBlog(BlogPost blogPost) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Application\Services\BlogPostManagement.cs:line 62
+   at Blog.Web.Areas.Admin.Controllers.BlogPostController.Update(BlogPostUpdateModel model) in E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\Areas\Admin\Controllers\BlogPostController.cs:line 165

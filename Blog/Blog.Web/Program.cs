@@ -1,7 +1,6 @@
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
 using Blog.Web.Data;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
@@ -9,9 +8,9 @@ using Serilog.Sinks.MSSqlServer;
 using Blog.Web;
 using System.Reflection;
 using Blog.Infrastructure;
-using Blog.Web.Models;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
-using AutoMapper;
+using Blog.Infrastructure.Identity;
+using Microsoft.AspNetCore.Identity;
+
 
 
 
@@ -99,8 +98,23 @@ try
     Log.Information(connectionString);
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-    builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<ApplicationDbContext>();
+    builder.Services
+        .AddIdentity<ApplicationUser, ApplicationRole>()
+
+        .AddEntityFrameworkStores<ApplicationDbContext>()
+
+        .AddUserManager<ApplicationUserManager>()
+
+        .AddRoleManager<ApplicationRoleManager>()
+
+        .AddSignInManager<ApplicationSignInManager>()
+
+        .AddDefaultTokenProviders();
+
+
+
+
+
     builder.Services.AddControllersWithViews();
 
     #region Automapper Config

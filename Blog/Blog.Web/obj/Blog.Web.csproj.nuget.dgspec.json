@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {}
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {}
   },
   "projects": {
-    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
         "projectName": "Blog.Application",
-        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
         "projectName": "Blog.Domain",
-        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,14 +130,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
         "projectName": "Blog.Infrastructure",
-        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,11 +155,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
               },
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               }
             }
           }
@@ -179,6 +179,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -186,6 +198,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -212,14 +228,14 @@
         }
       }
     },
-    "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {
+    "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
+        "projectUniqueName": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
         "projectName": "Blog.Web",
-        "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
+        "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\Blog.Web.csproj",
         "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-        "outputPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Web\\obj\\",
+        "outputPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\istia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -237,14 +253,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Application\\Blog.Application.csproj"
               },
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Domain\\Blog.Domain.csproj"
               },
-              "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
-                "projectPath": "E:\\Aspnet-B10\\Blogpractice.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj"
+              "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj": {
+                "projectPath": "E:\\Aspnet-B10\\Blog.Web\\Blog\\Blog.Infrastructure\\Blog.Infrastructure.csproj"
               }
             }
           }
@@ -278,23 +294,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

@@ -4,13 +4,14 @@ using Blog.Application.Services;
 using Blog.Domain.Entities;
 using Blog.Infrastructure.Repositories;
 using Blog.Web.Areas.Admin.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using System.Web;
 
 namespace Blog.Web.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize]
 
     public class BlogPostController : Controller
     {

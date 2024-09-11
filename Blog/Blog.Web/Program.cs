@@ -10,6 +10,8 @@ using System.Reflection;
 using Blog.Infrastructure;
 using Blog.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
+using Blog.Domain;
+using Blog.Infrastructure.Extensions;
 
 
 
@@ -98,28 +100,13 @@ try
     Log.Information(connectionString);
     builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-    builder.Services
-        .AddIdentity<ApplicationUser, ApplicationRole>()
-
-        .AddEntityFrameworkStores<ApplicationDbContext>()
-
-        .AddUserManager<ApplicationUserManager>()
-
-        .AddRoleManager<ApplicationRoleManager>()
-
-        .AddSignInManager<ApplicationSignInManager>()
-
-        .AddDefaultTokenProviders();
-
-
-
-
-
+    builder.Services.AddIdentity();
     builder.Services.AddControllersWithViews();
 
     #region Automapper Config
     builder.Services.AddAutoMapper(typeof(WebProfile));
     #endregion
+    builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
     var app = builder.Build();
 
@@ -151,7 +138,7 @@ try
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
 
-    app.MapRazorPages();
+   // app.MapRazorPages();
 
     app.Run();
 }

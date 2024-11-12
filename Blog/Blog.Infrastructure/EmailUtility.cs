@@ -17,7 +17,7 @@ namespace Blog.Infrastructure
         {
               _settings = smtpSettings.Value; 
         }
-        public void SendEmail(string receiverEmail, string receiverName, string subject, string body)
+        public void SendEmail(string receiverEmail, string receiverName, string subject, string body, bool isHtml = false)
         {
 
             var message = new MimeMessage();
@@ -25,11 +25,14 @@ namespace Blog.Infrastructure
             message.To.Add(new MailboxAddress(receiverName, receiverEmail));
             message.Subject = subject;
 
-            message.Body = new TextPart("plain")
+            //message.Body = new TextPart("plain")
+            //{
+            //    Text = body
+            //};
+            message.Body = new TextPart(isHtml ? "html" : "plain")
             {
                 Text = body
             };
-
             using (var client = new SmtpClient())
             {
                 client.Connect(_settings.Host, _settings.Port,

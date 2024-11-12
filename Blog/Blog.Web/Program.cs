@@ -106,6 +106,9 @@ try
     #region Automapper Config
     builder.Services.AddAutoMapper(typeof(WebProfile));
     #endregion
+
+    builder.WebHost.UseUrls("http://*:80");
+
     builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
     var app = builder.Build();
@@ -127,6 +130,7 @@ try
 
     app.UseRouting();
 
+    app.UseAuthentication();
     app.UseAuthorization();
 
     app.MapControllerRoute(

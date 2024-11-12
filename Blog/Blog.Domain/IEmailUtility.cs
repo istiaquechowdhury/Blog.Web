@@ -8,6 +8,6 @@ namespace Blog.Domain
 {
     public interface IEmailUtility
     {
-        void SendEmail(string receiverEmail, string receiverName, string subject, string body);
+        void SendEmail(string receiverEmail, string receiverName, string subject, string body, bool isHtml = false);
     }
 }

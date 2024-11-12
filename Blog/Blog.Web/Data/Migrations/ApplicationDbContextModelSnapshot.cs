@@ -48,6 +48,15 @@ namespace Blog.Web.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("5da1f6bf-7fff-48c4-8f37-f7e359c8dfa2"),
+                            ConcurrencyStamp = "520266c3-aea2-4ecb-a45a-90274b2a53c8",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Blog.Infrastructure.Identity.ApplicationRoleClaim", b =>

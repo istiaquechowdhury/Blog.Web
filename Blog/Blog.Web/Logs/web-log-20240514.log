@@ -1,9 +1,0 @@
-2024-05-14 16:02:15.875 +06:00 [INF] Application is Starting
-2024-05-14 16:02:19.751 +06:00 [INF] Server=(localdb)\mssqllocaldb;Database=aspnet-Blog.Web-e4c92e99-897b-487b-9db7-48f2fa42c0ce;Trusted_Connection=True;MultipleActiveResultSets=true
-2024-05-14 16:45:05.054 +06:00 [INF] Application is Starting
-2024-05-14 16:45:05.666 +06:00 [INF] Server=(localdb)\mssqllocaldb;Database=aspnet-Blog.Web-e4c92e99-897b-487b-9db7-48f2fa42c0ce;Trusted_Connection=True;MultipleActiveResultSets=true
-2024-05-14 16:45:26.130 +06:00 [INF] Application is Starting
-2024-05-14 16:45:26.678 +06:00 [INF] Server=(localdb)\mssqllocaldb;Database=aspnet-Blog.Web-e4c92e99-897b-487b-9db7-48f2fa42c0ce;Trusted_Connection=True;MultipleActiveResultSets=true
-2024-05-14 16:51:01.587 +06:00 [INF] Application is Starting
-2024-05-14 16:51:02.078 +06:00 [INF] Server=(localdb)\mssqllocaldb;Database=aspnet-Blog.Web-e4c92e99-897b-487b-9db7-48f2fa42c0ce;Trusted_Connection=True;MultipleActiveResultSets=true
-2024-05-14 16:51:05.763 +06:00 [INF] index

@@ -70,7 +70,7 @@ namespace Blog.Web.Controllers
 
                 if (result.Succeeded)
                 {
-
+                    await _userManager.AddToRoleAsync(user, "User");
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -79,7 +79,14 @@ namespace Blog.Web.Controllers
                         values: new { area = "", userId = userId, code = code, returnUrl = model.ReturnUrl },
                         protocol: Request.Scheme);
 
-                    _emailUtility.SendEmail(model.Email, model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    //_emailUtility.SendEmail(model.Email, model.Email, "Confirm your Email", $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    _emailUtility.SendEmail(
+                                model.Email,
+                                model.Email,
+                                "Confirm your Email",
+                                $"<p>Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.</p>",
+                                isHtml: true
+                    );
                     //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                     //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
@@ -90,7 +97,11 @@ namespace Blog.Web.Controllers
                     else
                     {
                         await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(model.ReturnUrl);
+                        //return LocalRedirect(model.ReturnUrl);
+
+                        TempData["success"] = "An email has been sent to your email";
+                        return RedirectToAction("Register", "Account");
+
                     }
                 }
                 foreach (var error in result.Errors)
@@ -156,8 +167,8 @@ namespace Blog.Web.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email,model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                   
-                    return LocalRedirect(model.ReturnUrl);
+                    return RedirectToAction("Index", "Dashboard", new { Area = "Admin" });
+                    //return LocalRedirect(model.ReturnUrl);
                 }
                 if (result.RequiresTwoFactor)
                 {
@@ -185,5 +196,34 @@ namespace Blog.Web.Controllers
             returnUrl ??= Url.Content("~/");
             return LocalRedirect(returnUrl);    
         }
+        [HttpGet, AllowAnonymous]
+        public async Task<IActionResult> ConfirmEmail(string userId, string code, string returnUrl = null)
+        {
+            if (userId == null || code == null)
+            {
+                return RedirectToAction("Index", "Home"); // Redirect to home page or a relevant page
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound($"Unable to load user with ID '{userId}'.");
+            }
+
+            var decodedCode = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
+            var result = await _userManager.ConfirmEmailAsync(user, decodedCode);
+            if (result.Succeeded)
+            {
+                TempData["success"] = "Email confirmation done.Please log in";
+                // Redirect to login page or a success page
+                return RedirectToAction("Login", "Account", new { confirmed = true });
+            }
+            else
+            {
+                // Redirect to an error page indicating confirmation failed
+                return View("Error");
+            }
+        }
+
     }
 }

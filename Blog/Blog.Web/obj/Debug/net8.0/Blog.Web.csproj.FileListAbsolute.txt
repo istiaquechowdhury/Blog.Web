@@ -847,7 +847,6 @@ E:\Aspnet-B10\Blogpractice.Web\Blog\Blog.Web\bin\Debug\net8.0\Newtonsoft.Json.Bs
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
-E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\System.Text.Json.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
@@ -877,3 +876,5 @@ E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\BouncyCastle.Cryptography.
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\MailKit.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\MimeKit.dll
 E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Aspnet-B10\Blog.Web\Blog\Blog.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
